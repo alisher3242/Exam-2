@@ -214,6 +214,7 @@
     &__button-arrow{
         border: none;
         background-color: transparent;
+        cursor: pointer;
     }
 
     &__button{
@@ -227,6 +228,7 @@
         letter-spacing: 0em;
         text-align: left;
         color: rgba(52, 52, 52, 0.5);
+        cursor: pointer;
 
         &:hover{
             color:#343434;
@@ -252,6 +254,7 @@
         max-width: 188px;
         width: 100%;
         cursor: pointer;      
+        text-transform: uppercase;
     }
 }
 

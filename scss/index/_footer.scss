@@ -92,7 +92,7 @@
 
     &__button{
         font-family: Open Sans;
-        font-size: 13px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 600;
         line-height: 20px;
@@ -101,11 +101,14 @@
         color: #fff;
         border: none;
         background-color: #FF9619;        
-        max-width: 271px;
+        max-width: 275px;
+        display: flex;
+        align-items: center;
         // width: 100%;
-        padding-top: 8px;
-        padding-bottom: 8px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         padding-left: 11px;
+        text-transform: uppercase;
         cursor: pointer;
 
         &::after{
