@@ -1,0 +1,291 @@
+.footer{
+    background-color: #5B5B5B;
+    padding-top: 80px;
+    padding-bottom: 29px;
+
+    &__container{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .ekmi{
+        position: absolute;
+        right: 0;
+        top: -173px;
+    }
+
+    &__wrapper{
+        display: flex;
+        align-items: start;
+        max-width: 997px;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 80px;
+    }
+
+    &__left{
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        max-width: 620px;
+        width: 100%;
+    }
+
+    &__list{
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        align-items: start;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    &__item{
+        gap: 25px;
+
+
+        &-link{
+            font-family: Raleway;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0.16em;
+            text-align: left;
+            max-width: 133px;
+            text-decoration: none;
+            color: #fff;       
+            display: inline-block;     
+        }
+    }
+
+    &__socialls{
+        gap: 15px;
+        display: flex;
+    }
+
+    &__social-link{
+        font-size: none;
+        text-decoration: none;
+    }
+
+    &__right{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__tel{
+        text-decoration: none;
+        font-family: Open Sans;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #fff;
+    }
+
+    &__button{
+        font-family: Open Sans;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #fff;
+        border: none;
+        background-color: #FF9619;        
+        max-width: 271px;
+        // width: 100%;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 11px;
+        cursor: pointer;
+
+        &::after{
+            content: "";
+            display: inline-block;
+            width: 14px;
+            height: 9px;
+            margin-left: 15px;
+            margin-right: 10px;
+            background-image: url(../images/footer-arrow.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: right center;
+        }
+    }
+
+    &__text{
+        margin: 0;
+        font-family: Raleway;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0.16em;
+        text-align: center;
+        color: #fff;     
+        max-width: 1210;
+        width: 100%;
+    }
+
+    &__mobile{
+        display: none;
+    }
+}
+
+
+.curtain{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    background: rgba(24, 24, 24, 0.7);
+    backdrop-filter: blur(9px);
+}
+
+.modal__close{
+    display: none;
+    position: absolute;
+    top: 260px;
+    right: 500px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 1200;
+}
+
+
+
+.modal__wrapper-large{
+        display: none;
+        background-color: #fff;
+        padding-top: 31px;
+        padding-bottom: 31px;
+        padding-left: 50px;
+        padding-right: 50px;
+        max-width: 470px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        position: absolute;
+        top: 190px;
+        left: 560px;
+        z-index: 1000;
+        display: none;
+
+
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 118px;
+            height: 131px;
+            background-image: url(../images/circle.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: left;
+            position: absolute;
+            left: -80px;
+            top: -5px;
+        }
+}
+
+.modal__wrapper-large--on{
+    display: block;
+    position: fixed;
+}
+
+.curtain--on{
+    display: block;
+    position: fixed;
+}
+
+// #modal
+
+
+@media only screen and(max-width:375px){
+    .footer{
+        padding-top: 63px;
+        padding-bottom: 27px;
+
+        .ekmi{
+            width: 223px;
+            height: 60px;
+            top: -120px;
+            right: 17px;
+        }
+
+        &__desktop{
+            display: none;
+        }
+
+        &__mobile{
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+
+        &__top{
+            display: flex;
+            align-items: start;
+            margin-bottom: 77px;
+            justify-content: space-around;
+        }
+
+        &__item-link{
+            font-family: Raleway;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px;
+            letter-spacing: 0.16em;
+        }
+
+        &__button{
+            margin: 0 auto;
+            max-width: 271px;
+            margin-bottom: 51px;
+        }
+
+        &__social-tel{
+            display: flex;
+            margin: 0 auto;
+            align-items: center;
+            width: 100%;
+            max-width: 247px;
+            justify-content: space-between;
+            margin-bottom: 58px;
+        }
+
+        &__logo-link{
+            margin: 0 auto;
+            margin-bottom: 34px;
+        }
+
+        &__text{
+            font-family: Raleway;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 15px;
+            letter-spacing: 0.16em;
+            text-align: center;     
+            max-width: 326px;       
+        }
+    }
+
+
+}

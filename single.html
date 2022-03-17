@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Single</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__desktop">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a class="header__link" href="#">Каталог</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="#">Индивидуальная мебель</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="#">Контакты</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link header__link-large" href="./index.html">
+                            <img class="header__logo" src="./images/header-logo.svg" alt="web site logo">
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="#">О компании</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__tel header__tel-large" href="tel:+380996384537">
+                            <img src="./images/header-tel.png" alt="telephone-icon" class="header__tel-icon">
+                            <span class="header__tel-number">+38 (099)-638-45-37</span>
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <select class="header__lang header__lang-large">
+                            <option class="header__language" selected value="Russian">RU</option>
+                            <option class="header__language" value="Uzbekistan">UZ</option>
+                            <option class="header__language" value="USA">US</option>
+                        </select>
+                    </li>
+                </ul>
+                <button class="header__close">
+                  <img src="./images/close.png" alt="close icon" class="header__closes" width="16" height="15">
+                </button>
+            </div>
+
+            <div class="header__mobile">
+                <a class="header__link" href="#">
+                    <img class="header__logo" src="./images/header-logo.svg" alt="web site logo">
+                </a>
+                <div class="header__mobile-right">
+                    <select class="header__lang">
+                        <option class="header__language" selected value="Russian">RU</option>
+                        <option class="header__language" value="Uzbekistan">UZ</option>
+                        <option class="header__language" value="USA">US</option>
+                    </select>
+                    <a class="header__tel" href="tel:+380996384537">
+                        <img src="./images/header-tel.png" alt="telephone-icon" class="header__tel-icon">
+                        <span class="header__tel-number">+38 (099)-638-45-37</span>
+                    </a>
+                    <button class="header__hamburger">
+                        <img src="./images/hamburger.png" alt="menu icon" class="header__hamburger-img">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="hero">
+            <div class="container hero__container">
+                <div class="hero__wrapper">
+                    <h2 class="hero__hedding">Barcelona</h2>
+                    <small class="hero__small">Коллекция: Modern</small>
+                    <p class="hero__text">Модель «Барселона»- главным преимуществом этого дивана является мобильность.
+                        Модель состоит из нескольких совершенно независимых друг от друга частей. Это своего рода
+                        конструктор, который каждый может сложить по-своему и создать уникальный предмет интерьера.</p>
+                    <h5 class="hero__price">от 65 000 uah</h5>
+                    <button class="hero__button">просчет стоимости</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="full">
+            <div class="full__container">
+                <img src="./images/single-1.png" alt="divan" class="full__image">
+                <img src="./images/single-2.png" alt="divan" class="full__image">
+                <img src="./images/single-3.png" alt="divan" class="full__image">
+                <img src="./images/single-4.png" alt="divan" class="full__image">
+                <img src="./images/single-1.png" alt="divan" class="full__image">
+                <img src="./images/single-2.png" alt="divan" class="full__image">
+                <img src="./images/single-3.png" alt="divan" class="full__image">
+                <img src="./images/single-4.png" alt="divan" class="full__image">
+            </div>
+        </div>
+
+        <div class="download container download__container">
+            <button class="download__button download__button-1">Скачать PDF</button>
+            <button class="download__button download__button-2">Скачать каталог</button>
+            <button class="download__button download__button-3">2D-3D модели</button>
+        </div>
+
+        <div class="characters">
+            <div class="characters__container container">
+                <div class="characters__mobile">
+                    <select class="characters__select">
+                        <option value="Техническая информация" selected>Техническая информация</option>
+                        <option value="Размеры">Размеры</option>
+                        <option value="Дополнительная комплектация">Дополнительная комплектация</option>
+                    </select>
+                    <select class="characters__select">
+                        <option value="Техническая информация">Техническая информация</option>
+                        <option value="Размеры" selected>Размеры</option>
+                        <option value="Дополнительная комплектация">Дополнительная комплектация</option>
+                    </select>
+                    <select class="characters__select">
+                        <option value="Техническая информация">Техническая информация</option>
+                        <option value="Размеры">Размеры</option>
+                        <option value="Дополнительная комплектация" selected>Дополнительная комплектация</option>
+                    </select>
+                </div>
+                <div class="characters__wrapper">
+                    <div class="characters__wrapper-top">
+                        <button class="characters__button characters__button-active">Техническая информация</button>
+                        <button class="characters__button characters__button-center">Размеры</button>
+                        <button class="characters__button">Дополнительная комплектация</button>
+                    </div>
+                    <ul class="characters__list">
+                        <li class="characters__item">
+                            <h4 class="characters__item-hedding">Механизм:</h4>
+                            <p class="characters__item-text">Без установки механизма трансформации.</p>
+                        </li>
+                        <li class="characters__item">
+                            <h4 class="characters__item-hedding">Каркас:</h4>
+                            <p class="characters__item-text">Каркас:
+                                Основой служит каркас с твердолиственных пород древесины в сочетании с многослойной
+                                фанерой.</p>
+                        </li>
+                        <li class="characters__item">
+                            <h4 class="characters__item-hedding">Наполнитель:</h4>
+                            <p class="characters__item-text">В подушках сидения используется высокоэластичный ППУ в
+                                сочетании с синтепоном. В подушках спинки используется синтепух или пухо-перьевое
+                                наполнение.</p>
+                        </li>
+                        <li class="characters__item">
+                            <h4 class="characters__item-hedding">Обивка:</h4>
+                            <p class="characters__item-text">Может быть выполнена, как в ткани, так в коже или же в их
+                                комбинации. Не рекомендуется использовать тонкие, эластичные ткани и очень толстые кожи.
+                            </p>
+                        </li>
+                        <li class="characters__item">
+                            <h4 class="characters__item-hedding">Комплектация:</h4>
+                            <p class="characters__item-text">Модель имеет множество вариантов комплектации, здесь есть
+                                прямые и угловые модули, а также модель может быть дополнена пуфом и декоративными
+                                подушками.</p>
+                        </li>
+                        <li class="characters__item">
+                            <h4 class="characters__item-hedding">Декоративные элементы:</h4>
+                            <p class="characters__item-text">Декоративные элементы: </p>
+                        </li>
+                        <li class="characters__item">
+                            <h4 class="characters__item-hedding">Дополнительные опции:</h4>
+                            <p class="characters__item-text">Все подушки имеют съемные чехлы.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="characters__btn">загрузить характеристику</div>
+            </div>
+        </div>
+
+        <div class="modal">
+            <div class="modal__container container">
+                <div class="modal__wrapper">
+                    <small class="modal__small">Заполните форму</small>
+                    <h2 class="modal__hedding">остались вопросы?</h2>
+                    <form class="modal__forma" action="https://echo.htmlacademy.ru" method="get">
+                        <input class="modal__input" type="text" name="name" placeholder="Ваше имя*">
+                        <input class="modal__input" type="tel" name="number" placeholder="Ваш номер телефона*">
+                        <input class="modal__input" type="text" name="from" placeholder="Страна">
+                        <input class="modal__input" type="text" name="text" placeholder="Комментарий">
+                        <div class="modal__checkbox">
+                            <input class="modal__cb" type="checkbox" checked>
+                            <p class="modal__text">Подтверждая заказ, я принимаю условия пользовательского соглашения
+                            </p>
+                        </div>
+                        <button class="modal__button" type="submit">запросить звонок</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="others others__container container">
+            <h2 class="others__hedding"> <span class="others__span">П</span>охожие товары</h2>
+            <ul class="others__list">
+                <li class="others__item">
+                    <a href="#" class="others__item-link">
+                        <div class="others__images1">
+                            <img src="./images/martin.png" alt="divan" class="others__image" width="267" height="176">
+                        </div>
+                        <h5 class="others__item-hedding">Martin</h5>
+                    </a>
+                </li>
+                <li class="others__item">
+                    <div class="others__images">
+                        <a href="#" class="others__item-link">
+                            <div class="others__images2">
+                                <img src="./images/alba.png" alt="divan" class="others__image" width="270" height="245">
+                            </div>
+                            <h5 class="others__item-hedding">Alba</h5>
+                        </a>
+                </li>
+                <li class="others__item">
+                    <div class="others__images">
+                        <a href="#" class="others__item-link">
+                            <div class="others__images3">
+                                <img src="./images/toscana.png" alt="divan" class="others__image" width="270" height="227">
+                            </div>
+                            <h5 class="others__item-hedding">Toscana</h5>
+                        </a>
+                </li>
+                <li class="others__item">
+                    <div class="others__images">
+                        <a href="#" class="others__item-link">
+                            <div class="others__images4">
+                                <img src="./images/leonardo.png" alt="divan" class="others__image" width="267" height="176">
+                            </div>
+                            <h5 class="others__item-hedding">Leonardo</h5>
+                        </a>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__desktop">
+          <div class="footer__container container">
+            <img src="./images/ekmi.png" alt="ekmi" class="ekmi" width="364" height="96">
+            <div class="footer__wrapper">
+              <div class="footer__left">
+                <a href="index.html" class="footer__logo-link">
+                  <img src="./images/footer-logo.png" alt="web site log" class="footer__logo" width="170" height="58">
+                </a>
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a href="#" class="footer__item-link">Каталог</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__item-link">о компанииг</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__item-link">Индивидуальная мебель</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__item-link">Партнерам дизайнерам</a>
+                  </li>
+                </ul>
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a href="#" class="footer__item-link">2D, 3D модели</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__item-link">Шоу-румы</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__item-link">Дилерам</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__item-link">Контакты</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__item-link">Конфигуратор</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__right">
+                <div class="footer__socialls">
+                  <a href="#" class="footer__social-link">
+                    <img src="./images/insta.png" alt="insta icon" class="footer__social" width="27" height="27">
+                  </a>
+                  <a href="#" class="footer__social-link">
+                    <img src="./images/fb.png" alt="fb icon" class="footer__social" width="27" height="27">
+                  </a>
+                </div>
+                <a href="tel:+380996384537" class="footer__tel">+38 (099)-638-45-37</a>
+                <button class="footer__button">Персональная консультация </button>
+              </div>
+            </div>
+            <p class="footer__text">
+              © 1993–2021 Интернет-магазин «EKMI™» — меблі
+            </p>
+          </div>
+        </div>
+    
+        <div class="footer__mobile container">
+          <img src="./images/ekmi.png" alt="ekmi" class="ekmi" width="364" height="96">
+          <div class="footer__top">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__item-link">Каталог</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__item-link">о компанииг</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__item-link">Индивидуальная мебель</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__item-link">Партнерам дизайнерам</a>
+              </li>
+            </ul>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__item-link">2D, 3D модели</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__item-link">Шоу-румы</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__item-link">Дилерам</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__item-link">Контакты</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__item-link">Конфигуратор</a>
+              </li>
+            </ul>
+          </div>
+          <button class="footer__button">Персональная консультация </button>
+          <div class="footer__social-tel">
+            <div class="footer__socialls">
+              <a href="#" class="footer__social-link">
+                <img src="./images/insta.png" alt="insta icon" class="footer__social" width="27" height="27">
+              </a>
+              <a href="#" class="footer__social-link">
+                <img src="./images/fb.png" alt="fb icon" class="footer__social" width="27" height="27">
+              </a>
+            </div>
+            <a href="tel:+380996384537" class="footer__tel">+38 (099)-638-45-37</a>
+          </div>
+          <a href="index.html" class="footer__logo-link">
+            <img src="./images/footer-logo.png" alt="web site log" class="footer__logo" width="170" height="58">
+          </a>
+          <p class="footer__text">
+            © 1993–2021 Интернет-магазин «EKMI™» — меблі
+          </p>
+        </div>
+        <div class="modal__wrapper-large ">
+          <small class="modal__small">Заполните форму</small>
+          <h2 class="modal__hedding">остались вопросы?</h2>
+          <form class="modal__forma" action="https://echo.htmlacademy.ru" method="get">
+            <input class="modal__input" type="text" name="name" placeholder="Ваше имя*">
+            <input class="modal__input" type="tel" name="number" placeholder="Ваш номер телефона*">
+            <input class="modal__input" type="text" name="from" placeholder="Страна">
+            <input class="modal__input" type="text" name="text" placeholder="Комментарий">
+            <div class="modal__checkbox">
+              <input class="modal__cb" type="checkbox" checked>
+              <p class="modal__text">Подтверждая заказ, я принимаю условия пользовательского соглашения</p>
+            </div>
+            <button class="modal__button" type="submit">запросить звонок</button>
+          </form>
+        </div>
+        <button class="modal__close">
+          <img src="./images/close.png" alt="close icon">
+        </button>
+        <div class="curtain "></div>
+      </footer>
+
+      
+  <script src="./js/main.js" defer> </script>
+</body>
+
+</html>

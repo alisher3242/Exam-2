@@ -1,0 +1,197 @@
+.characters{
+    padding-bottom: 160px;
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        width: 100%;
+    }
+
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 28px;
+        margin-bottom: 25px;
+        border: 1px solid rgba(52, 52, 52, 0.2);
+
+        &-top{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+
+    &__button{
+        border: none;
+        max-width: 446px;
+        width: 100%;
+        padding-top: 29px;
+        padding-bottom: 29px;
+        font-family: Raleway;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0.1em;
+        text-align: center;
+        background: #F2F3F5;
+        border: 1px solid rgba(52, 52, 52, 0.2);
+        border-top: none;
+        border-right: 0;
+        cursor: pointer;
+
+        &:first-child{
+            border-right: 0;
+            padding-bottom: 30px;
+            border-left: 0;
+        }
+        &:nth-child(2) {
+            border-right: 0;
+        }
+
+        &-active{
+            background-color: white;
+            border-bottom: 0;
+        }
+
+        &-center{
+            max-width: 279px;
+        }
+    }
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        // list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding-top: 48px;
+        gap: 40px;
+        width: 100%;
+        padding-left: 30px;
+    }
+
+    &__item{
+        display: flex;
+        align-items: flex-start;
+        gap: 45px;
+        width: 100%;
+
+        &::before{
+            content:"";
+            width: 9px;
+            height: 9px;
+            background-color: #ff9619;
+            display: inline-block;
+            border-radius: 50%;
+            margin-right: 11px;
+            margin-top: 2px;
+
+        }
+
+        &-hedding{
+            margin: 0;
+            font-family: Raleway;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 17px;
+            letter-spacing: 0.1em;
+            text-align: left;     
+            max-width: 155px;   
+            width: 100%;    
+            display: flex;
+            align-items: center;
+           
+        }
+
+        &-text{
+            font-family: Raleway;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 18px;
+            letter-spacing: 0.1em;
+            text-align: left;
+            margin: 0;
+            max-width: 842px;
+        }
+    }
+
+    &__btn{
+        font-family: Raleway;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #fff;
+        max-width: 342px;
+        width: 100%;
+        background-color: #ff9619;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: none;     
+        cursor: pointer;   
+    }
+
+    &__mobile{
+        display: none;
+    }
+}
+
+@media only screen and(max-width:375px){
+    .characters{
+        padding-bottom: 104px;
+
+        &__container{
+            padding-left: 19px;
+            padding-right: 19px;
+            align-items: center;
+        }
+
+        &__wrapper{
+            display: none;
+        }
+
+        &__mobile{
+            display: flex;
+            flex-direction: column;
+            max-width: 340px;
+            width: 100%;            
+        }
+
+        &__select{
+            font-family: Raleway;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0.1em;
+            border: none;
+            appearance: none;
+            background-color:#F2F3F5;
+            padding-top: 19px;
+            padding-bottom: 19px;
+            margin-bottom: 25px;
+            text-align: center;
+            background-image: url(../images/header-arrow.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: 315px center;
+
+            &:last-child{
+                margin-bottom: 60px;
+            }
+        }
+
+        &__btn{
+            max-width: 276px;
+        }
+    }
+}

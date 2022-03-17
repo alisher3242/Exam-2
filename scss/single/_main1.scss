@@ -1,0 +1,256 @@
+.hero{
+    padding-bottom: 184px;
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        width: 100%;
+        background-image: url(../images/single-bg.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: left center;
+    }
+
+    &__wrapper{
+        // max-width: 1140px;
+        // width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-right: 16px;
+    }
+
+    &__hedding{
+        font-family: Raleway;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 53px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 0;
+        margin-bottom: 30px;
+        text-transform: uppercase;        
+    }
+
+    &__small{
+        font-family: Raleway;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 0;
+        margin-bottom: 15px;        
+    }
+
+    &__text{
+        font-family: Raleway;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 0;
+        max-width: 371px;    
+        margin-bottom: 15px;    
+    }
+
+    &__price{
+        font-family: Open Sans;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: left;
+        text-transform: uppercase;
+        color: #FF9619;
+        margin: 0;
+        margin-bottom: 30px;        
+    }
+
+    &__button{
+        font-family: Raleway;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #FFFFFF;
+        margin: 0;
+        border: none;
+        background-color: #FF9619;       
+        max-width: 288px;
+        padding: 15px 15px; 
+        width: 100%;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+}
+
+.download{
+    padding-bottom: 160px;
+
+    &__container{
+        // border: 1px solid #FF9619;
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+    }
+
+    &__button{
+        border: 1px solid #FF9619;
+        background-color: white;
+        padding-top: 45px;
+        padding-bottom: 45px;
+        font-family: Raleway;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 35px;
+        letter-spacing: 0em;
+        text-align: center;
+        // margin: 0 auto;
+
+        &:hover{
+            background-color: #FF9619;
+            color: #FFFFFF;
+        }
+    }
+
+    &__button{
+        cursor: pointer;
+        &-1{
+            max-width: 386px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding-left: 52px;
+
+            &::after{
+                content: "";
+                display: inline-block;
+                width: 32px;
+                height: 32px;
+                margin-left: 25px;
+                background: #FF9619;
+                border-radius: 50%;
+                background-image: url(../images/dow-arrow.png);
+                background-repeat: no-repeat;
+                background-size: auto;
+                background-position: center;
+            }
+        }
+
+        &-2{
+            max-width: 427px;
+            width: 100%;
+            border-left: 0;
+        }
+
+        &-3{
+            max-width: 358px;
+            width: 100%;
+            border-left: 0;
+        }
+    }
+}
+
+@media only screen and (max-width:375px){
+    .hero{
+        padding-bottom: 157px;
+
+        &__container{
+            padding-left: 19px;
+            padding-right: 19px;
+            background-size: 340px 224px;
+            background-position: center top;
+            min-height: 541px;
+            // height: 100%;
+        }
+
+        &__wrapper{
+            padding: 0;
+            padding-top: 233px;
+        }
+
+        &__hedding{
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 15px;
+        }
+
+        &__small{
+            font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 8px;
+        }
+
+        &__text{
+            font-size: 14px;
+            line-height: 21px;
+            margin-bottom: 15px;
+        }
+
+        &__price{
+            font-size: 20px;
+            line-height: 27px;
+            margin-bottom: 30px;
+        }
+
+        &__button{
+            font-size: 16px;
+            line-height: 21px;
+            margin: 0 auto;
+        }
+    }
+
+    .download{
+        &__container{
+            flex-wrap: wrap;
+            padding-left: 19px;
+            padding-right: 19px;
+            justify-content: center;
+        }
+
+        &__button{
+            max-width: 168px;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            font-family: Raleway;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: left;            
+
+            &-1{
+                padding-left: 20px;
+
+                &::after{
+                    margin-left: 4px;
+                    width: 18px;
+                    height: 18px;
+                    background-size: 11px 11px;
+                }
+            }
+
+            &-2{
+                padding-left: 16px;
+            }
+            
+            &-3{
+                border-left: 1px solid #FF9619;
+                border-top: 0;
+                padding-left: 24px;
+            }
+
+        }
+    }
+}

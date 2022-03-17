@@ -1,0 +1,55 @@
+.nav{
+    &__container{
+        background-image: url(../images/divan.png), url(../images/stul.png), url(../images/kreslo.png),url(../images/krovat.png),url(../images/matras.png), url(../images/pufy.png), url(../images/mebel.png);
+        background-repeat: no-repeat;
+        background-size:auto;
+        background-position: 15px, 160px, 315px, 500px, 630px, 795px, 970px;
+    }
+
+    &__list{
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        width: 100%;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    &__link{
+        text-decoration: none;
+
+        &:hover .nav__text{
+            color: #FF9619;
+        }
+    }
+
+    &__text{
+        margin: 0;
+        font-family: Open Sans;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;        
+        margin-top: 144px;
+        max-width: 111px;
+        text-align: center;
+        text-decoration: none;
+        color: #343434;
+    }
+}
+
+@media only screen and (max-width:375px){
+    .nav{
+        display: none;
+    }
+}

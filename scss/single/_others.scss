@@ -1,0 +1,141 @@
+.others {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-bottom: 255px;
+
+    &__hedding {
+        font-family: Raleway;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 41px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 0px;
+        margin-bottom: 60px;
+    }
+
+    &__span {
+        color: #ff9619;
+        font-family: Raleway;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 41px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    &__list{
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    &__item{
+        max-width: 270px;
+        width: 100%;
+
+        &-link{
+            text-decoration: none;
+            color: #343434;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &-hedding{
+            font-family: Raleway;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 22px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin: 0;            
+        }
+    }
+
+    &__images1{
+        padding-top: 42px;
+        padding-bottom: 60px;
+        background-color: #F2F3F5;
+        margin-bottom: 23px;
+    }
+
+    &__images2{
+        padding-top: 8px;
+        padding-bottom: 25px;
+        background-color: #F2F3F5;
+        margin-bottom: 23px;
+    }
+
+    &__images3{
+        padding-top: 26px;
+        padding-bottom: 25px;
+        background-color: #F2F3F5;
+        margin-bottom: 23px;
+    }
+
+    &__images4{
+        padding-top: 42px;
+        padding-bottom: 60px;
+        background-color: #F2F3F5;
+        margin-bottom: 23px;
+    }
+}
+
+@media only screen and(max-width:375px){
+    .others{
+        padding-bottom: 198px;
+        padding-left: 19px;
+        padding-right: 19px;
+
+        &__hedding{
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        &__span{
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        &__list{
+            flex-direction: column;
+        }
+
+        &__item{
+            max-width: 340px;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        &__image{
+            margin-bottom: 15px;
+            width: 340px;
+            // height: 222px;
+        }
+
+        &__image{
+            margin-bottom: 15px;
+            width: 340px;
+        }
+
+        &__image{
+            margin-bottom: 15px;
+            width: 340px;
+        }
+
+        &__image{
+            margin-bottom: 15px;
+            width: 340px;
+        }
+        
+    }
+}
