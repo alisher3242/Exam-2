@@ -24,3 +24,18 @@ closebutton.addEventListener('click', () => {
     modall.classList.remove('modal__wrapper-large--on')
     curtain.classList.remove('curtain--on')
 })
+
+const modalbtnn = document.querySelector('.footer__button-large');
+const modalll = document.querySelector('.modal__wrapper-large');
+const closebuttons = document.querySelector('.modal__close');
+const curtains = document.querySelector('.curtain');
+
+modalbtnn.addEventListener('click', (e) => {
+    modalll.classList.add('modal__wrapper-large--onlick');
+    curtains.classList.add('curtain--onlick')
+})
+
+closebuttons.addEventListener('click', () => {
+    modalll.classList.remove('modal__wrapper-large--onlick')
+    curtains.classList.remove('curtain--onlick')
+})
